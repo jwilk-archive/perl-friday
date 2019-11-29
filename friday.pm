@@ -1,9 +1,9 @@
 use Time::Piece;
 
 BEGIN {
-    *p = (localtime->wdayname eq 'Fri')
+    *f = (localtime->wdayname eq 'Fri')
         ? sub() {}
         : sub {};
 }
 
-p/1;#/;+
+f/1;#/;+
