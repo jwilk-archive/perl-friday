@@ -10,7 +10,7 @@ out=$(faketime -f "$date" perl -MO=Deparse "$mod" 2>&1) || xs=$?
 sed -e 's/^/# /' <<EOF
 $out
 EOF
-if [ $xs -ne 1 ]
+if [ $xs -eq 255 ]
 then
     echo ok 1
 else
