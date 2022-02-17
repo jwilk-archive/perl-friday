@@ -4,7 +4,7 @@
    $ date -R
    Fri, 29 Nov 2019 23:52:02 +0100
 
-   $ perl -MO=Deparse friday.pm > /dev/null
+   $ perl -c friday.pm
    friday.pm syntax OK
 
    ⋮
@@ -12,7 +12,7 @@
    $ date -R
    Sat, 30 Nov 2019 00:03:06 +0100
 
-   $ perl -MO=Deparse friday.pm > /dev/null
+   $ perl -c friday.pm
    syntax error at friday.pm line 12, at EOF
    friday.pm had compilation errors.
 
